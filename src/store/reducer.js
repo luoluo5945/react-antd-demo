@@ -4,7 +4,7 @@ import {
   TOGGLE_TODO,
   SET_VISIBILITY_FILTER,
   VisibilityFilters
-} from './actions'
+} from './action-types'
 const { SHOW_ALL } = VisibilityFilters
 
 function visibilityFilter(state = SHOW_ALL, action) {

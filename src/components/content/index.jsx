@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import { Route } from 'react-router-dom';
 import Home from '@/pages/home';
-import userManage from '@/pages/userManage';
+import UserManage from '@/pages/userManage';
+import ReduxDemo from '@/pages/reduxDemo';
 import { BrowserRouter } from 'react-router-dom';
 // 布局
 import { Layout } from 'antd';
@@ -20,7 +21,8 @@ class ContentMain extends Component {
               <div style={{ padding: 24, background: '#fff', textAlign: 'center' }}>
                   <div>
                     <Route path='/' exact component={Home}></Route>
-                    <Route path='/userManage' exact component={userManage}></Route>
+                    <Route path='/userManage' exact component={UserManage}></Route>
+                    <Route path='/reduxDemo' exact component={ReduxDemo}></Route>
                   </div>
               </div>
             </Content>

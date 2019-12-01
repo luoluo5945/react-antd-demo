@@ -1,5 +1,6 @@
 import Home from '@/pages/home'
 import UserManage from '@/pages/userManage'
+import ReduxDemo from '@/pages/reduxDemo'
 
 export default [
   {
@@ -14,5 +15,11 @@ export default [
     component: UserManage,
     icon: 'desktop',
     code: 'userManage'
-  },
+  }, {
+    name: 'redux官方示例',
+    path: '/reduxDemo',
+    component: ReduxDemo,
+    icon: 'desktop',
+    code: 'reduxDemo'
+  }
 ]

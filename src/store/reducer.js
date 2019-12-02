@@ -3,6 +3,8 @@ import {
   ADD_TODO,
   TOGGLE_TODO,
   SET_VISIBILITY_FILTER,
+  GET_DEMO_LIST,
+  ADD_DEMO_LIST,
   VisibilityFilters
 } from './action-types'
 const { SHOW_ALL } = VisibilityFilters
@@ -40,9 +42,32 @@ function todos(state = [], action) {
   }
 }
 
+const demoListInit = [{
+  text: 1
+}, {
+  text: 2
+},  {
+  text: 3
+},  {
+  text: 4
+},  {
+  text: 5
+}]
+function demoList(state = demoListInit, action) {
+  switch (action.type) {
+    case ADD_DEMO_LIST:
+      return [...state, { text: action.text }]
+    case GET_DEMO_LIST:
+      return state
+    default:
+      return state
+  }
+}
+
 const todoApp = combineReducers({
   visibilityFilter,
-  todos
+  todos,
+  demoList,
 })
 
 export default todoApp

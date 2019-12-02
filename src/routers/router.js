@@ -12,4 +12,4 @@ export default class Router extends Component {
       </Switch>
     )
   }
-} 
+}

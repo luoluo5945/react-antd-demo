@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import Home from '@/pages/home';
 import UserManage from '@/pages/userManage';
 import ReduxDemo from '@/pages/reduxDemo';
+import ReduxDemo2 from '@/pages/reduxDemo2';
 import { BrowserRouter } from 'react-router-dom';
 // 布局
 import { Layout } from 'antd';
@@ -23,6 +24,7 @@ class ContentMain extends Component {
                     <Route path='/' exact component={Home}></Route>
                     <Route path='/userManage' exact component={UserManage}></Route>
                     <Route path='/reduxDemo' exact component={ReduxDemo}></Route>
+                    <Route path='/reduxDemo2' exact component={ReduxDemo2}></Route>
                   </div>
               </div>
             </Content>
@@ -34,4 +36,3 @@ class ContentMain extends Component {
   }
 }
 export default ContentMain;
-

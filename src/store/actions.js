@@ -1,4 +1,4 @@
-import { ADD_TODO, TOGGLE_TODO, SET_VISIBILITY_FILTER } from './action-types'
+import { ADD_TODO, TOGGLE_TODO, SET_VISIBILITY_FILTER, ADD_DEMO_LIST } from './action-types'
 /**
  * Action
  * Action 是把数据从应用（译者注：这里之所以不叫 view 是因为这些数据有可能是服务器响应
@@ -13,6 +13,10 @@ import { ADD_TODO, TOGGLE_TODO, SET_VISIBILITY_FILTER } from './action-types'
 
 export function addTodo(text) {
   return { type: ADD_TODO, text }
+}
+
+export function addDemoList(text) {
+  return { type: ADD_DEMO_LIST, text }
 }
 
 export function toggleTodo(index) {

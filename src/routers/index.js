@@ -23,7 +23,7 @@ export default [
     icon: 'desktop',
     code: 'reduxDemo'
   }, {
-    name: 'redux官方示例2',
+    name: 'redux个人示例',
     path: '/reduxDemo2',
     component: ReduxDemo2,
     icon: 'desktop',

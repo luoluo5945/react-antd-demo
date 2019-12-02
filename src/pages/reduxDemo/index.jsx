@@ -1,7 +1,7 @@
 
 import Footer from './components/Footer'
-import AddTodo from './AddTodo'
-import VisibleTodoList from './VisibleTodoList'
+import AddTodo from './components/AddTodo'
+import VisibleTodoList from './components/VisibleTodoList'
 import React from 'react';
 
 class ReduxDemo extends React.Component {
